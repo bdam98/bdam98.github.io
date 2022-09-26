@@ -1,4 +1,4 @@
-function makeBig(){
+function big(){
     document.getElementById("textarea").style.fontSize = "24pt";
 }
 
