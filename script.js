@@ -1,5 +1,6 @@
 "use strict";
 
+document.addEventListener("DOMContentLoaded", function() {
 const titleElement = document.querySelector(".title");
 const buttonsContainer = document.querySelector(".buttons");
 const yesButton = document.querySelector(".btn--yes");
@@ -26,8 +27,20 @@ noButton.addEventListener("click", function () {
   }
 });
 
+document.getElementById("submitPassword").addEventListener("click", function () {
+    const password = document.getElementById("passwordInput").value;
+    const correctPassword = "Hirono"; // Change this to your actual password
+  
+    if (password === correctPassword) {
+      document.querySelector(".password-container").classList.add("hidden"); // Hide password screen
+      document.querySelector(".container").classList.remove("hidden"); // Show main content
+    } else {
+      alert("Incorrect password! Try again.");
+    }
+});  
+
 function handleYesClick() {
-  titleElement.innerHTML = "Yayyy!! ^_^";
+  titleElement.innerHTML = "Yayyy!! ^_^ <3 <br> I love you so much.";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -43,11 +56,11 @@ function resizeYesButton() {
 function generateMessage(noCount) {
   const messages = [
     "No",
-    "Are you sure?",
+    "Whyyy",
     "Pleaseeee",
     "Don't do this to me :(",
-    "You're breaking my heart",
-    "I'm going to cry...",
+    "D:<",
+    "I'm sad now",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
@@ -61,3 +74,4 @@ function changeImage(image) {
 function updateNoButtonText() {
   noButton.innerHTML = generateMessage(noCount);
 }
+});

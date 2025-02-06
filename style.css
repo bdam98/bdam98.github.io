@@ -12,6 +12,39 @@
     background-color: #fff0f6;
     font-family: "Protest Riot", sans-serif;
   }
+
+  .password-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .password-container p {
+    font-size: 2rem;
+    color: #f53699;
+    margin-bottom: 2rem;
+  }
+  
+  #passwordInput {
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    border: 2px solid #f53699;
+    border-radius: 4px;
+  }
+  
+  #submitPassword {
+    padding: 1rem 3rem;
+    background-color: #40c057;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   
   .container {
     height: 100vh;
