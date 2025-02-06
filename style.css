@@ -1,103 +1,111 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    background-color: #fff0f6;
-    font-family: "Protest Riot", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .password-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .password-container p {
-    font-size: 2rem;
-    color: #f53699;
-    margin-bottom: 2rem;
-  }
-  
-  #passwordInput {
-    padding: 1rem;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    border: 2px solid #f53699;
-    border-radius: 4px;
-  }
-  
-  #submitPassword {
-    padding: 1rem 3rem;
-    background-color: #40c057;
-    color: white;
-    font-size: 1.6rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .container {
-    height: 100vh;
-    margin: 0 auto;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .cat-img {
-    width: 30rem;
-    height: 30rem;
-    margin-bottom: 2rem;
-  }
-  
-  .title {
-    font-size: 3.6rem;
-    color: #f53699;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  
-    gap: 1rem;
-  }
-  
-  .btn {
-    padding: 1.5rem 2.5rem;
-    border: none;
-    border-radius: 4px;
-  
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-block;
-  }
-  
-  .btn--yes {
-    background-color: #40c057;
-  }
-  
-  .btn--no {
-    background-color: #f03e3e;
-  }
-  
-  .hidden {
-    display: none;
-  }
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff0f6;
+  font-family: "Protest Riot", sans-serif;
+}
+
+body.locked {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.password-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff0f6;
+  z-index: 999;
+}
+
+.password-container p {
+  font-size: 2rem;
+  color: #f53699;
+  margin-bottom: 2rem;
+}
+
+#passwordInput {
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border: 2px solid #f53699;
+  border-radius: 4px;
+}
+
+#submitPassword {
+  padding: 1rem 3rem;
+  background-color: #40c057;
+  color: white;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-img {
+  width: 30rem;
+  height: 30rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 3.6rem;
+  color: #f53699;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn--yes {
+  background-color: #40c057;
+}
+
+.btn--no {
+  background-color: #f03e3e;
+}
+
+.hidden {
+  display: none;
+}
